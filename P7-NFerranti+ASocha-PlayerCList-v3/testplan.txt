@@ -1,0 +1,10 @@
+Player Class in a Circular Linked List Test Plan
+By: Nicholas Ferranti and Alex Socha
+
+We started off with a previous circular linked list class that was provided by data structures here at UNH. From that it was modified into a template class, thus removing the source file (cpp) and putting all the information in the header for compiling purposes. Functions were modified to forefill the requirements of the game and were tested in the unitCList function.
+
+First 4 players were created and then each were added to the list. During the game we are hoping to use the getNewPlayer() function to create the players and pass in the CList as a parameter to allow the function to see if any of the colors were picked by a previous player.
+
+After all 4 players were added they are printed out from the list to ensure the operator overload works. Then the 4 players are removed in a random order to ensure removal is possible. The list is then printed out to see if anything is inside the list.
+
+Next the players are re-added to the list and printed out from the list to ensure players are actually added to the list. The "head" is then set to the currentPos using the init() function, this function will then allow you to use the next() function to get the next player in the list and make them the head. This will then print out each player after getting them and ensure the list can be brought back to the first player in the list.
